@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="D:\site_shop\Desing\static\css\catalog_product.css">
-    <script src="D:\site_shop\Desing\script\Note.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link rel="stylesheet" href="D:\site_shop\Desing\static\css\catalog_product_2.css">
+    <link rel="stylesheet" href="D:\site_shop\Desing\static\css\adaptive.css">
+    <script src="D:\site_shop\Desing\script\Note.js"></script> 
     <title>Document</title>
 </head>
 <body>
@@ -34,15 +37,16 @@
                     <div class="menu-container">
                         <ul class="menu">
                             <li class="menu-item"><a href="#">Products</a></li>
-                            <li class="menu-item"><a href="#">Home</a></li>
+                            <li class="menu-item"><a href="D:\site_shop\Desing\templates\information_panel.html">Home</a></li>
                             <li class="menu-item"><a href="#">Desktop</a></li>
                             <li class="menu-item"><a href="#">Smartphone</a></li>
                             <li class="menu-item"><a href="#">Shop</a></li>
                             <li class="menu-item"><a href="#">Pages</a></li>
                             <li class="menu-item"><a href="#">Contact us</a></li>
-                            <li class="menu-item"><a href="#">Login</a></li>
+                            <li class="menu-item", id="loginLing"><a href="#">Login</a></li>
                         </ul>
                     </div>
+                    <!-- <script src = "D:\site_shop\Desing\script\windows.js"></script> -->
 
                     <div class="panel-icon">
                         <div class="search-form">
@@ -71,683 +75,173 @@
                     </div>
                 </nav>
             </div>
-        </div>
-
-        
+        </div>  
     </header>
    
-  
-     
-
-    <div class="main">
+    <div class="main">  
 
         <section class="product_container">
           <div class="view-modes">
             <button id="grip-view">Grip view</button>
             <button id="list-view">List view</button>
-          </div>
-
-          <div class="selectedColorsContainer">
-          </div>
-
-        <div>
-          <ul class="product_list" id="product_list">
-            <!--Перший рядок-->
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-
-            </li>
-
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-            </li>
-
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-
-            </li>
-
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-
-            </li>
-
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-
-            </li>
-
-            <!--Другий рядок-->
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-
-            </li>
-
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-
-            </li>
-
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-
-            </li>
-
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-
-            </li>
-
-            <li class="product" id ="product">
-              <div class="product-details">
-                <div class="product-status">
-                    <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                    <p>In Stock</p>
-                  </div>
-                <div class="product-image">
-                    <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                </div>
-                <div class="product-title">
-                    <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                </div>
-                <div class="product-ratings-and-reviews">
-                    <div class="product-rating">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                        <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                    </div>
-                    <div class="product-reviews">
-                        <p>Reviews (4)</p>
-                    </div>
-                </div>
-                <div class="product-prices">
-                    <p class="discount-price">$499.00</p>
-                    <p class="original-price">$499.00</p>
-                </div>
-            </div>
-
-            </li>
-
+            <button class="button-to-show" id = "showFilterBtn"> Show Filters</button>          
             
-            <!--Третій рядок-->
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-            <!--Четвертий рядок-->
-
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-            <li class="product" id ="product">
-                <div class="product-details">
-                  <div class="product-status">
-                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
-                      <p>In Stock</p>
-                    </div>
-                  <div class="product-image">
-                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
-                  </div>
-                  <div class="product-title">
-                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
-                  </div>
-                  <div class="product-ratings-and-reviews">
-                      <div class="product-rating">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
-                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
-                      </div>
-                      <div class="product-reviews">
-                          <p>Reviews (4)</p>
-                      </div>
-                  </div>
-                  <div class="product-prices">
-                      <p class="discount-price">$499.00</p>
-                      <p class="original-price">$499.00</p>
-                  </div>
-              </div>
-  
-            </li>
-
-              
-
-
-          </ul>
         </div>
+
+          <div class="filter-selected">
+            
+          </div>
+
+          <div class="product-items">
+            
+            <ul class="product_list" id="product_list" data-category="all">
+                <li class="product" id ="product" data-category="clothing">
+                      <div class="product-details">
+                        <div class="product-status">
+                            <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
+                            <p>In Stock</p>
+                          </div>
+                        <div class="product-image">
+                            <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
+                        </div>
+                        
+                        <div class="product-ratings-and-reviews">
+                            <div class="product-rating">
+                                <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                                <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
+                                <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                                <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                                <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
+                            </div>
+                            <div class="product-reviews">
+                                <p>Reviews (4)</p>
+                            </div>
+                        </div>
+                        <div class="product-title">
+                            <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
+                        </div>
+                        <div class="product-prices">
+                            <p class="discount-price">$499.00</p>
+                            <p class="original-price">$499.00</p>
+                        </div>
+                    </div>
+        
+                </li>
+
+                <li class="product" id ="product" data-category="electronics">
+                  <div class="product-details">
+                    <div class="product-status">
+                        <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
+                        <p>In Stock</p>
+                      </div>
+                    <div class="product-image">
+                        <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
+                    </div>
+                    
+                    <div class="product-ratings-and-reviews">
+                        <div class="product-rating">
+                            <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                            <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
+                            <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                            <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                            <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
+                        </div>
+                        <div class="product-reviews">
+                            <p>Reviews (4)</p>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
+                    </div>
+                    <div class="product-prices">
+                        <p class="discount-price">$499.00</p>
+                        <p class="original-price">$499.00</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="product" id ="product" data-category="clothing">
+                    <div class="product-details">
+                      <div class="product-status">
+                          <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
+                          <p>In Stock</p>
+                        </div>
+                      <div class="product-image">
+                          <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
+                      </div>
+                      
+                      <div class="product-ratings-and-reviews">
+                          <div class="product-rating">
+                              <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                              <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
+                              <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                              <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                              <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
+                          </div>
+                          <div class="product-reviews">
+                              <p>Reviews (4)</p>
+                          </div>
+                      </div>
+                      <div class="product-title">
+                          <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
+                      </div>
+                      <div class="product-prices">
+                          <p class="discount-price">$499.00</p>
+                          <p class="original-price">$499.00</p>
+                      </div>
+                  </div>
+      
+              </li>
+
+              <li class="product" id ="product" data-category="electronics">
+                <div class="product-details">
+                  <div class="product-status">
+                      <img src="D:\site_shop\Desing\imag\Group 132.svg" alt="In Stock">
+                      <p>In Stock</p>
+                    </div>
+                  <div class="product-image">
+                      <img src="D:\site_shop\Desing\imag\image 29.png" alt="Product Image">
+                  </div>
+                  
+                  <div class="product-ratings-and-reviews">
+                      <div class="product-rating">
+                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                          <img src="D:\site_shop\Desing\imag\Star 8.svg"alt="Star">
+                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                          <img src="D:\site_shop\Desing\imag\Star 8.svg" alt="Star">
+                          <img src="D:\site_shop\Desing\imag\Star 10.svg" alt="Star">
+                      </div>
+                      <div class="product-reviews">
+                          <p>Reviews (4)</p>
+                      </div>
+                  </div>
+                  <div class="product-title">
+                      <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
+                  </div>
+                  <div class="product-prices">
+                      <p class="discount-price">$499.00</p>
+                      <p class="original-price">$499.00</p>
+                  </div>
+              </div>
+  
+          </li>
+
+
+            </ul>
+            
+            
+
+        </div>
+        
+        
+
+        
+
+       
 
         </section>
 
-        <div class="sidebar">
+        <div class="sidebar", id="sidebar">
             <aside class="filters">
                 <div class="filter">
 
@@ -757,54 +251,53 @@
                             <h3>Filter</h3>
                        </div>
                             
-                        <div class="clear-button">
-                            <button id="clear-button">Clear Filter</button>
-                        </div>
-                           
-                    </div>
-                        
-                </div>
-
-                <div class="category">
-                    <label>Category:</label>
-                    <select id="categorySelect">
-                        <option value="all">All</option>
-                        <option value="clothing">Clothing</option>
-                        <option value="electronics">Electronics</option>
-                        <option value="accessories">Accessories</option>
-                    </select>
-                </div>
-
-                <div class="price">
-                    <label>Price Range:</label>
-                    <select id="price-list">
-                        <option class="custom-option" value="buy">0$-1000$</option>
-                        <option class="custom-option" value="buy">1000$-2000$</option>
-                        <option class="custom-option" value="buy">2000$-3000$</option>
-                    </select>
-                </div>
-
-                <div class="color">
-                    <label>Color:</label>
-                    <select id="colorPicker">
+                            <div class="clear-button">
+                                <button id="clear-button">Clear Filter</button>
+                            </div>
                             
-                        <option class="custom-option" value="all">All Colors</option>
-                        <option class="custom-option" value="blue">Blue</option>
-                        <option class="custom-option" value="red">Red</option>
-                    </select>
-                       
-                </div>
+                        </div>
+                            
+                    </div>
 
-                <div class="filter-name">
-                    <label>Filter Name:</label>
-                    <input type="text" id="filterName"> 
-                </div>
+                    <div class="category">
+                        <label>Category:</label>
+                        <select id="categorySelect">
+                            <option class="all">All</option>
+                            <option class="clothing">Clothing</option>
+                            <option class="electronics">Electronics</option>
+                            <option class="accessories">Accessories</option>
+                        </select>
+                    </div>
 
-                <div class="add-filter">
-                    <button id="applyFilter">Apply Filter</button>
-                </div>
-                <script src="D:\site_shop\Desing\script\filter.js"></script>  
-                
+                    <div class="price">
+                        <label>Price Range:</label>
+                        <select id="price-list">
+                            <option class="custom-option" value="buy">0$-1000$</option>
+                            <option class="custom-option" value="buy">1000$-2000$</option>
+                            <option class="custom-option" value="buy">2000$-3000$</option>
+                        </select>
+                    </div>
+
+                    <div class="color">
+                        <label>Color:</label>
+                        <select id="colorPicker">
+                                
+                            <option class="custom-option" value="all">All Colors</option>
+                            <option class="custom-option" value="blue">Blue</option>
+                            <option class="custom-option" value="red">Red</option>
+                        </select>
+                        
+                    </div>
+
+                    <div class="filter-name">
+                        <label>Filter Name:</label>
+                        <input type="text" id="filterName"> 
+                    </div>
+
+                    <div class="add-filter">
+                        <button id="applyFilter">Apply Filter</button>
+                    </div>
+                    
                 <div class="brands">
                     <div class="brands-all">
                         <div class="button-brands-all">
@@ -817,24 +310,37 @@
                         </div>
                     </div>
                     <div class="logo-grid">
-                        <div class="logo" data-brand="brand1">
-                            <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 1">
+                        <div class="logo-first-column">
+                            
+                            <div class="logo" data-brand="brand1">
+                                <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 1">
+                            </div>
+                            
+                            <div class="logo" data-brand="brand2">
+                                <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 2">
+                            </div>
+                            
+                            <div class="logo" data-brand="brand3">
+                                <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 3">
+                            </div>
                         </div>
-                        <div class="logo" data-brand="brand2">
-                            <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 2">
+
+                        <div class="logo-second-column">
+
+                            <div class="logo" data-brand="brand4">
+                                <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 4">
+                            </div>
+                        
+                            <div class="logo" data-brand="brand5">
+                                <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 5">
+                            </div>
+                        
+                            <div class="logo" data-brand="brand6">
+                                <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 6">
+                            </div>
                         </div>
-                        <div class="logo" data-brand="brand3">
-                            <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 3">
-                        </div>
-                        <div class="logo" data-brand="brand4">
-                            <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 4">
-                        </div>
-                        <div class="logo" data-brand="brand5">
-                            <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 5">
-                        </div>
-                        <div class="logo" data-brand="brand6">
-                            <img src="D:\site_shop\Desing\imag\company_logos\image 33.jpg" alt="Logo 6">
-                        </div>
+                        
+                       
                     </div>
                 
                  
@@ -847,10 +353,68 @@
 
             </aside> 
 
-        </div>
+        </div> 
+
+
+        <aside class="filter-window" id="filterWindow">
+            <div class="filters">
+                <div class="filter">
+                    <div class="filters-clear">
+                        <div>
+                            <h3>Filter</h3>
+                        </div>
+                        <div class="clear-button">
+                            <button id="clearButtonWindows">Clear Filter</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="category">
+                    <label>Category:</label>
+                    <select id="categorySelectWindows">
+                        <option value="all">All</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+    
+                <div class="price">
+                    <label>Price Range:</label>
+                    <select id="price-list">
+                        <option value="0-1000">0$-1000$</option>
+                        <option value="1000-2000">1000$-2000$</option>
+                        <option value="2000-3000">2000$-3000$</option>
+                    </select>
+                </div>
+    
+                <div class="color">
+                    <label>Color:</label>
+                    <select id="colorPicker">
+                        <option value="all">All Colors</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                </div>
+    
+                <div class="filter-name">
+                    <label>Filter Name:</label>
+                    <input type="text" id="filterName">
+                </div>
+    
+                <div class="add-filter">
+                    <button id="applyFilterWindows">Apply Filter</button>
+                </div>
+            </div>
+            <button id="closeFilterWindow">Close</button>
+        </aside>
+        
+
+        <script src="D:\site_shop\Desing\script\test.js"></script>   
+
 
     </div>
-    
+
     <div class="offer-panel">
         <div class="products-offer">
             <div class="productSupport">
@@ -895,6 +459,7 @@
 
     </div>
 
+
     <footer>
         <div class="container-footer">
             <div class="container-email">
@@ -912,6 +477,7 @@
                         <input type="submit" value="Submit" class="inputSubmit">
                     </form>
                 </div>
+             
             </div>
             <div class="row">
                 <div class="footer-col">
@@ -1017,6 +583,7 @@
             </div>
         </div>
     </footer>
-  
+    
+
 </body>
 </html>

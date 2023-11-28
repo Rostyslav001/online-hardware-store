@@ -1,32 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const gripViewButton = document.getElementById("grip-view");
-    const listViewButton = document.getElementById("list-view");
-    const productListView = document.getElementById("product_list");
+$(document).ready(function () {
+    const gripViewButton = $("#grip-view");
+    const listViewButton = $("#list-view");
+    const productListView = $("#product_list");
+    const categorySelect = $("#categorySelect");
+    const productItems = $(".product");
 
-    gripViewButton.addEventListener("click", function () {
-        productListView.classList.remove("list-view");
-        productListView.classList.add("grid-view");
+    gripViewButton.click(function () {
+        productListView.removeClass("list-view").addClass("grid-view");
     });
 
-    listViewButton.addEventListener("click", function () {
-        productListView.classList.remove("grid-view");
-        productListView.classList.add("list-view");
+    listViewButton.click(function () {
+        productListView.removeClass("grid-view").addClass("list-view");
     });
 
-    productListView.classList.remove("list-view");
-    productListView.classList.add("grid-view");
+    productListView.removeClass("list-view").addClass("grid-view");
 });
-
-const categorySelect = document.getElementById("categorySelect");
-const productItems = document.querySelectorAll(".product");
-categorySelect.addEventListener("change", function () {
-    const selectedCategory = categorySelect.value;
-    productItems.forEach((product) => {
-        if (selectedCategory === "all" || product.dataset.category === selectedCategory) {
-            product.style.display = "block";
-        } else {
-            product.style.display = "none";
-        }
-    });
-});
-
