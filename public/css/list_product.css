@@ -1,0 +1,649 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.title_protucts, .custome_builds, .swiper_container {
+    max-width: 1398px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/*Стилі до банера*/
+
+.banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1398px; 
+    width: 100%; 
+    
+}
+
+.title_protucts, .custome_builds, .swiper_container, .product_container {
+    max-width: 1398px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head_img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+/*Стилі до блоку list_products*/
+.title_protucts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.title h4{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+.See_All_Products h5{
+    
+    color: #0156FF;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 14.95px;
+}
+
+
+
+.product_list {
+    display: flex;
+    
+}
+/**/
+.product {
+    display: flex;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 233px;
+    background-color: #fff;
+    
+}
+.product-ratings-and-reviews {
+    display: flex;
+    align-items: center; 
+}
+.product-image img {
+    max-width: 100%;
+}
+
+.product-status {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.product-image{
+    width: 150px;
+    height: 150px;
+}
+.product-status img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.product-title p {
+    font-size: 16px;
+    margin: 5px 0;
+   
+}
+
+.product-rating img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.product-reviews p {
+    font-size: 14px;
+}
+
+.product-prices .discount-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.product-prices .original-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #777; 
+}
+.product-rating {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+}
+
+.product_container{
+    display: flex;
+}
+/**/
+.action{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F5F7FF;
+    
+
+}
+
+.vector10{
+    height: 30px; 
+    border: 2px #00AEB8 solid;
+}
+
+.logo-action{
+    margin: 0 20px;
+}
+
+.text-action{
+    margin: 0 20px;
+}
+
+.text_banner{
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28.60px;
+    word-wrap: break-word;
+    top: 30%;
+    right: 40%;
+}
+.custome_See_All_Products{
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 14.95px;
+    word-wrap: break-word;
+    top: 60%;
+    right: 40%;
+}
+.custome_builds{
+    display: flex;
+}
+
+/**/
+.product-type-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    width: 100%;
+    background: url("../../imag/image\ 30.png") no-repeat;
+    position: relative;
+    max-width: 9%;
+    min-height: 300px;
+    min-width: 300px;
+    background-size: cover;
+}
+
+
+header {
+    background: #020202;
+    padding: 10px 0; 
+}
+
+/* Стилі для контейнера інформації */
+.contact-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Стилі для блоку інформації */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap; /* Перенос блоків на новий рядок при необхідності */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Займати всю доступну ширину */
+    color: white;
+}
+
+/* Стилі для блоку робочих днів */
+.contact-container,
+.informati_panel,
+.working-day,
+.visit,
+.phone-number-contacts{
+    flex: 1; 
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+
+.informati_panel{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.logo {
+    width: 35px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-container{
+    width: 40%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none; 
+    margin-left: 10px;
+    padding: 0;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #f2f5f5;
+    color: #fbfafa;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+
+nav ul li a {
+    padding: 5px 10px;
+}
+
+.panel_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/**/
+
+.action{
+    display: flex;
+    max-width: 1398px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background: #F5F7FF;
+    
+
+}
+
+.vector10{
+    height: 30px; 
+    border: 2px #00AEB8 solid;
+}
+
+.logo-action{
+    margin: 0 20px;
+}
+
+.text-action{
+    margin: 0 20px;
+}
+
+/**/
+.company-logos{
+    display: flex;
+    max-width: 1398px;
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+
+.company-logo{
+    padding: 22px;
+    padding-block: 55px;
+}
+
+.information-for-news{
+    max-width: 1398px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+   
+}
+
+.New {
+ 
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 0;
+    width: 25%;
+
+}
+
+.Rectangle17{
+    max-width: 1160px;
+    width: 100%;
+    height: 100%;
+    background: #F5F7FF
+}
+
+.text-Rectangle17{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 49px;
+    padding-left: 191px;
+    padding-right: 119px;
+    padding-bottom: 157px;
+    word-wrap: break-word;
+}
+
+.comment{
+
+    color:black;
+    font-size: 96px;
+    font-weight: 400;
+    margin: 0 35px;
+}
+
+.container-text{
+    display: flex;
+}
+.TamaBrown{
+    width: 100%;
+    height: 100%; 
+    text-align: right; 
+    color: black; 
+    font-size: 14px;
+    font-weight: 400; word-wrap: break-word;
+}
+
+.Frame34{
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    border-radius: 50px; 
+    border: 2px #0156FF solid; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex
+}
+
+.LeaveUsAReview{
+    text-align: center; 
+    color: #0156FF; 
+    font-size: 14px; 
+    font-weight: 600; 
+    word-wrap: break-word;
+
+}
+
+.Component17 {
+    width: 100%;
+    height: 34px;
+    position: relative
+}
+
+.Ellipse14{
+    width: 12px; 
+    height: 12px; 
+    left: 56px; 
+    top: 12px; position: absolute; 
+    transform: rotate(-180deg); 
+    transform-origin: 0 0;
+    background: #CACDD8;
+    border-radius: 9999px
+}
+.Ellipse15{
+    width: 12px; 
+    height: 12px; 
+    left: 34px; 
+    top: 12px; position: absolute; 
+    transform: rotate(-180deg); 
+    transform-origin: 0 0;
+    background: #CACDD8;
+    border-radius: 9999px
+}
+
+.Ellipse16{
+    width: 12px; 
+    height: 12px; 
+    left: 12px; 
+    top: 12px; position: absolute; 
+    transform: rotate(-180deg); 
+    transform-origin: 0 0;
+    background: #CACDD8;
+    border-radius: 9999px
+}
+
+.Ellipse17{
+    width: 12px; 
+    height: 12px; 
+    left: 78px; 
+    top: 12px; position: absolute; 
+    transform: rotate(-180deg); 
+    transform-origin: 0 0;
+    background: #CACDD8;
+    border-radius: 9999px
+}
+
+/**/
+
+.footer{
+    background: #111111;
+    padding-top: 70px;
+}
+.footer-about{
+    margin-bottom: 30px;
+}
+.footer-about .footer-logo{
+    margin-bottom: 30px;
+}
+.footer-about p{
+    color: #b7b7b7;
+    margin-bottom: 30px;
+}
+.footer-widget{
+    margin-bottom: 30px;
+}
+.footer-widget h6{
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.footer-widget ul li{
+    line-height: 36px;
+    list-style: none;
+}
+.footer-widget ul li a{
+    color: #b7b7b7;
+    font-size: 15px;
+}
+.footer-widget ul li a:hover{
+    color: #e53637;
+}
+.footer-widget .footer-newslatter p{
+    color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form{
+    position: relative;
+}
+.footer-widget .footer-newslatter form input{
+    width: 100%;
+    font-size: 15px;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    padding: 15px 0;
+    border-bottom: 2px solid #ffffff;
+}
+.footer-widget .footer-newslatter form input::placeholder{
+    color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form button{
+    color: #b7b7b7;
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    height: 100%;
+    background: transparent;
+    border: none;
+}
+.footer-copyright-text{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.footer-copyright-text p{
+    color: #b7b7b7;
+    margin-bottom: 0;
+}
+.footer-copyright-text p i{
+    color: #e53637;
+}
+.footer-copyright-text p a{
+    color: #e53637;
+}/* Style for the footer container */
+footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer content */
+  padding: 20px 0; /* Padding around the footer content */
+}
+
+/* Style for the title */
+.title h2 {
+  font-size: 24px; /* Adjust the font size */
+  margin-bottom: 10px; /* Spacing between the title and subtitle */
+}
+
+/* Style for the subtitle */
+.subtitle h6 {
+  font-size: 14px; /* Adjust the font size */
+  margin-bottom: 20px; /* Spacing between the subtitle and navigation */
+
+  /* Optional: Add an underline to the subtitle */
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+/* Style for footer columns (Information) */
+.footer-col {
+  width: 20%; /* Adjust the width of each column */
+  margin-right: 10px; /* Spacing between columns */
+}
+
+.footer-col h4 {
+  font-size: 18px; /* Adjust the font size for column headers */
+}
+
+.footer-col ul {
+  list-style: none; /* Remove bullet points */
+}
+
+.footer-col ul li {
+  margin-bottom: 5px; /* Spacing between list items */
+}
+
+.footer-col-email{
+    display: flex;
+    position: absolute;
+}
+/* Style for the email input and submit button */
+.inputEmail {
+  width: 100%; /* Make the input field full-width */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.inputSubmit {
+  background-color: #f8c200; /* Background color for the submit button */
+  color: #333; /* Text color for the button */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.inputSubmit:hover {
+  background-color: #ffdb4d; /* Change the background color on hover */
+}
+
+/* Style for the copyright text */
+.col p {
+  font-size: 14px; /* Adjust the font size */
+}
+
+/* Style for the bank card icons and social icons */
+.bank-cards a,
+.socialIcins a {
+  margin-right: 10px; /* Spacing between icons */
+}
+
+.bank-cards img,
+.socialIcins img {
+  width: 30px; /* Adjust the icon size */
+}
+
+/* Style for the horizontal line */
+hr {
+  background-color: #555; /* Line color */
+  height: 1px; /* Line thickness */
+  border: none;
+  margin: 20px 0;
+}
+
+.row{
+  display: flex;
+}

@@ -1,0 +1,60 @@
+body{
+
+    font-family:Arial, Helvetica, sans-serif; /*встановлюється шрифт*/
+    background-color : #f4f4f4;
+    margin: 0; /*становлює зовнішні відступи (поля) навколо елемента*/
+    padding: 0; /*задає відступ навколо вмісту елемента (тобто, задає відстань між кордоном елемента та уявним прямокутником, котрий обмежує текст*/
+    display: flex; 	/* Елемент поводиться як блоковий і викладає вміст згідно флекс-моделі*/
+    justify-content: center; /*вирівнювання по центру */
+    align-items: center;
+    height: 100vh;
+
+}
+
+form{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(37, 40, 239, 0.1);
+
+}
+
+h1{
+    margin-top: 0;
+
+}
+
+label{
+    font-weight: bold;
+
+}
+
+a[class="facebook-register-button"]{
+    background-color: #0970de;
+}
+
+input[type='text'],
+input[type='data'],
+input[type='password']{
+    width: 100;
+    padding: 100;
+    margin-bottom: 10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    

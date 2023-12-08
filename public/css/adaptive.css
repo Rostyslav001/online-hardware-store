@@ -1,0 +1,107 @@
+@media (max-width: 600px) {
+  
+    .contact-info {
+      flex-direction: column;
+    }
+  
+    .working-day,
+    .visit,
+    .phone-number-contacts {
+      padding: 5px;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav ul li {
+      margin: 0;
+      padding: 5px 0;
+    }
+  
+  
+  
+    .information-panel {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .header-logo {
+      padding: 10px;
+    }
+  
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: #f2f5f5;
+      color: #fbfafa;
+    }
+  
+    nav ul li {
+      display: block; /* Updated for small screens */
+      margin: 0;
+    }
+  
+    nav ul li a {
+      padding: 5px 10px;
+    }
+  
+    .panel-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #product_list.grid-view {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .view-modes {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      margin: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+      display: none; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+      flex-direction: column; /* Змініть напрямок на вертикальний для малих екранів */
+      align-items: stretch; /* Розтягніть елементи на всю ширину екрану */
+  }
+
+  nav ul {
+      text-align: center; /* Центруйте пункти меню на малих екранах */
+  }
+
+  nav ul li {
+      display: block;
+      margin: 5px 0; /* Додайте простір між пунктами меню */
+  }
+
+  .panel-icon {
+      margin-top: 10px; /* Додайте простір від іконок в панелі */
+  }
+}
+
+
+

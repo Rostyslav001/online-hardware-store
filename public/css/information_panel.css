@@ -1,0 +1,714 @@
+.contact-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    width: 100%; 
+    color: white;
+  }
+  
+  
+  .contact-container,
+  .informati_panel,
+  .working-day,
+  .visit,
+  .phone-number-contacts{
+    flex: 1; 
+    text-align: center;
+    color: white;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column; 
+    }
+  
+    .working-day,
+    .visit,
+    .phone-number-contacts {
+        padding: 5px; 
+    }
+  }
+  
+  .information-panel{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+  
+   .header-logo {
+    padding: 10px;  
+  }
+  
+  nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #f2f5f5;
+    color: #fbfafa;
+    
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px; 
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; 
+  }
+  
+  
+  nav ul li a {
+    padding: 5px 10px;
+  }
+  
+  .panel-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#product_list.grid-view{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view-modes{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 10px;
+}
+
+/*style porducts*/
+.product {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: 18%;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  float: left;
+  list-style-type: none;
+  
+}
+.product-ratings-and-reviews {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.product-image{
+  text-align: center;
+}
+.product-image img {
+  max-width: 100%;
+}
+
+.product-status {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.product-status img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.product-title p {
+  font-size: 16px;
+  margin: 5px 0;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ 
+.product-rating img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.product-reviews p {
+  font-size: 14px;
+}
+
+.product-prices .discount-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.product-prices .original-price {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: #777; 
+}
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+}
+
+
+
+
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #595959;
+  background: #e5e5e5;
+}
+  
+a {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+
+
+
+
+h3{
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+li{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about, .Projects, .work, .Education{
+  margin-left: 20px;
+}
+
+.work h3 ,  .Education h3 , .Projects h3 {
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.work p ,  .Education p , .Projects p {
+  color: #A8A8A8;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.work span.separator, .Education span.separator, .Projects span{
+
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  
+
+}
+
+
+
+
+
+.work h4{
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.organization{
+  color: #FB6D3A;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.about h2{
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.about h1{
+  color: black;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.about p {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+
+
+
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(51%, 1fr));
+    grid-gap: 5px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78%;
+    height: 115px;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imag-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; 
+  min-height: 50%;
+  background: url("../../imag/image\ 49.png") no-repeat;
+  background-size: contain; 
+  width: 100%; 
+  padding-bottom: 31.25%; 
+}
+
+.imag-icon .icon {
+  max-width: 100%; /* Забезпечує адаптивність для зображення */
+  max-height: 100%; /* Забезпечує адаптивність для зображення */
+  display: block;
+}
+
+.offer-panel{
+  margin-top: 3%;
+  background: #F5F7FF;
+}
+
+.imag-products{
+  width: 32px; 
+  padding: 8%;
+  background: #0156FF; 
+  border-radius: 9999px
+}
+
+.productSupport, .personalAccount, .amazingSavings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin: 3%;
+}
+
+.products-offer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  
+}
+
+/*Footer*/
+
+footer{
+  background: #111111;
+  padding-top: 70px;
+  background-color: #333; 
+  color: #fff;
+  padding: 20px 0; 
+  }
+
+.footer-about{
+  margin-bottom: 30px;
+}
+.footer-about .footer-logo{
+  margin-bottom: 30px;
+}
+.footer-about p{
+  color: #b7b7b7;
+  margin-bottom: 30px;
+}
+.footer-widget{
+  margin-bottom: 30px;
+}
+.footer-widget h6{
+  color:  #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.footer-widget ul li{
+  line-height: 36px;
+  list-style: none;
+}
+.footer-widget ul li a{
+  color: #b7b7b7;
+  font-size: 15px;
+}
+.footer-widget ul li a:hover{
+  color: #e53637;
+}
+.footer-widget .footer-newslatter p{
+  color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form{
+  position: relative;
+}
+.footer-widget .footer-newslatter form input{
+  width: 100%;
+  font-size: 15px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  padding: 15px 0;
+  border-bottom: 2px solid #ffffff;
+}
+.footer-widget .footer-newslatter form input::placeholder{
+  color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form button{
+  color: #b7b7b7;
+  font-size: 16px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+.footer-copyright-text{
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.footer-copyright-text p{
+  color: #b7b7b7;
+  margin-bottom: 0;
+}
+.footer-copyright-text p i{
+  color: #e53637;
+}
+.footer-copyright-text p a{
+  color: #e53637;
+}
+
+
+.container-footer{
+  padding: 0 10%;
+}
+.container-email{
+  display: flex;
+  padding: 20px;
+  border: 1px;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col-email{
+  margin-left: auto;
+  width: 40%;
+}
+
+.title h2 {
+  font-size: 24px; 
+  margin-bottom: 10px; 
+}
+
+/* Style for the subtitle */
+.subtitle h6 {
+font-size: 14px; 
+margin-bottom: 20px; 
+
+/* Optional: Add an underline to the subtitle */
+border-bottom: 1px solid #fff;
+padding-bottom: 10px;
+}
+
+/* Style for footer columns (Information) */
+.footer-col {
+  width: 20%; 
+  margin-right: 10px; 
+}
+
+.footer-col h4 {
+  font-size: 18px; 
+}
+
+.footer-col ul {
+  list-style: none; 
+}
+
+.footer-col ul li {
+  margin-bottom: 5px; 
+}
+
+
+
+.inputEmail {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.inputSubmit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-left: 8%;
+}
+
+.inputSubmit:hover {
+  background-color: #007bff;
+
+  }
+  
+  #email-form{
+      display: flex;
+  }
+  
+.col p {
+  font-size: 14px; 
+}
+
+/* Style for the bank card icons and social icons */
+.bank-cards a,
+.socialIcins a {
+  margin-right: 10px; 
+}
+
+.bank-cards img,
+.socialIcins img {
+  width: 30px; 
+}
+
+hr {
+background-color: #555; 
+height: 1px; 
+border: none;
+margin: 20px 0;
+}
+
+.row{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-cards{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/*Стилі до банера*/
+
+.banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.head_img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+/*Стилі до блоку list_products*/
+.title_protucts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.title h4{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+.See_All_Products h5{
+    
+    color: #0156FF;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 14.95px;
+}
+
+
+.product-container{
+    display: flex;
+    justify-content: center;
+}
+.product_list {
+    display: flex;
+    
+}
+
+.product {
+    margin: 10px;
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    position: relative;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.imag_icon {
+ width: 4%;
+ padding-right: 5px;
+}
+
+.Instock {    
+    color: #78A962;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+    
+  
+}
+.imag_product {
+    width: 155px;
+}
+
+.stars_product {
+    display :flex;
+}
+
+.action{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F5F7FF;
+    background-color: #F5F7FF ;
+    
+
+}
+
+.vector10{
+    height: 30px; 
+    border: 2px #00AEB8 solid;
+}
+
+.logo-action{
+    margin: 0 20px;
+}
+
+.text-action{
+    margin: 0 20px;
+}
+
+.text_banner{
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28.60px;
+    word-wrap: break-word;
+    top: 30%;
+    right: 40%;
+}
+.custome_See_All_Products{
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 14.95px;
+    word-wrap: break-word;
+    top: 60%;
+    right: 40%;
+}
+.custome_builds{
+    display: flex;
+}
+.product_type{
+    width: 315px;
+    background: url("../../imag/image\ 30.png") no-repeat;
+    position: relative;
+}
+
+
+
+
+@media (max-width:600px) {
+    footer .row{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    .footer .footer-col ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-col input{
+        width:100%;
+    }
+    footer .row hr {
+        width: 100%; /* Встановлює ширину hr на 100%, щоб зробити його горизонтальним */
+        margin: 20px 0; /* Додатковий марж на верх і низ hr для відділення від інших вмісту */
+        border: none; /* Забирається горизонтальна лінія на hr */
+        border-top: 1px solid white; /* Додається вертикальна лінія на hr */
+    }
+    .product-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+
+    }
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

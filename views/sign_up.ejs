@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/sign_up.css">
+    <title>Login</title>
+   
+</head>
+<body>
+    
+    <% if (message) { %>
+
+        <div class="message"> 
+            <script>
+                alert('<%= message %>');
+            </script>
+           
+        </div>
+       
+    <% } %>
+</form>
+
+
+    <form action="/submit-form" method="post">
+        <h1>Login</h1>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="first_name"><br> <!-- Change name to "first_name" -->
+        
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="last_name"><br> <!-- Change name to "last_name" -->
+    
+        <label for="data">Birthday</label><br>
+        <input type="date" id="data" name="data"><br>
+    
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+    
+        <label for="password">Password:</label><br>
+        <input type ="password" name="password"><br> <!-- Add name attribute -->
+    
+        <label for=""><input type="checkbox">Remember Me </label>
+        <a href="">Forget Password</a><br>
+        <input type="submit" name="submit" value="Create an account"><br>
+    </form>
+
+</body>
+</html>

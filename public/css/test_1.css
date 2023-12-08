@@ -1,0 +1,383 @@
+.head {
+    display: flex end;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16aacb;
+    color: #545252;
+
+    padding: 20px;
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+}
+.contact-info {
+    display: flex;
+   
+    padding-left: 10px;
+}
+
+.icon-enveloper {
+    display: inline-block; /* Зробити іконку блоковим елементом для налаштування розміру */
+    width: 24px; /* Задати бажаний розмір шириною */
+    height: 24px; /* Задати бажаний розмір висотою */
+    margin-right: 5px; /* Відступ справа від іконки (за бажанням) */
+    vertical-align: middle; /* Вирівнювання по вертикалі (залежно від контексту) */
+    fill: #16aacb; 
+}
+.contact-link {
+    text-decoration: none;
+    color: #545252;
+}
+.icon-telephone {
+    display: inline-block; 
+    width: 24px; 
+    height: 24px;
+    margin-right: 5px; 
+    vertical-align: middle; 
+    fill: #16aacb;
+}
+
+.container-box {
+    display: flex;
+    align-items: center;
+}
+.container_title {
+    display: flex;
+    width: 240px;
+    font-size: 24px; /* Розмір шрифту для назви магазину */
+    height: 120px;
+    line-height: 106px;
+    align-items: flex-start;
+}
+.home-link img {
+    vertical-align: middle;
+}
+
+#search-form {
+    display:flex;
+    margin-left: auto;
+    
+}
+
+/* Стилі для рядка пошуку */
+.search-container {
+    display: flex;
+    width: 480px;
+    height: 40px ;
+    margin: 13px auto;
+    border: 15px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden; /* Обмеження вмісту в контейнері */
+    padding:10px;
+}
+
+#search-input {
+    flex: 1; /* Займати всю доступну ширину в контейнері */
+    width: 300px;
+    padding: 10px;
+    border: none;
+    outline: none; /* Забираємо рамку навколо поля вводу при фокусуванні */
+}
+
+#search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0; /* Закруглити лише правий край кнопки */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+
+.menu {
+    list-style-type: none; 
+    padding: 0;
+}
+
+/* Стилі навігації */
+nav {
+    background-color: #f2f5f5;
+    color: #fbfafa;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+}
+
+.box {
+    border: 20px solid #55c5e9;
+    padding: 15px;
+    background: #666;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.head_img {
+    max-width: 100%; /* Зробити зображення адаптивним */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Центрувати зображення в блоці */
+
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #333;
+    color: #5e5a5a;
+    text-align: center;
+        padding: 10px;
+}
+
+/* Стилі для banner-section */
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 100%;
+}
+
+.grip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+   
+   
+}
+
+.banner {
+    display: inline-block;
+    text-align: center;    
+    padding: 16px;
+    margin-left: 20px;
+   
+}
+  
+.head_img {
+    max-width: 100%; /* Робимо зображення адаптивним */
+
+}
+  
+.overlay-gradient {
+    max-width: 100%; /* Робимо зображення адаптивним */
+    display: flex; /* Показуємо зображення */
+   
+
+}
+  
+.transition {
+    max-width: 200%; /* Робимо зображення адаптивним */
+    height: auto;
+    width: 405px;
+    height: 377px;
+  
+}
+  
+.banner-content {
+    padding: 20px; /* Додаємо відступи для контенту банера */
+    text-align: center; /* Вирівнюємо текст в центрі */
+    color: #fff; /* Задайте колір тексту за бажанням */
+}
+
+.banner-content h3 {
+    font-size: 24px; /* Задайте розмір шрифту для заголовку */
+    margin: 0;
+}
+
+.banner-content p {
+    margin: 10px 0;
+}
+
+.btn-effect {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #16aacb;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.group{
+    display: flex;
+    position: absolute;
+    margin: 5px;
+    padding: 20px;
+    top: 50%;
+    left: 63%;
+    transform: translate(100%, -52%);
+    text-align: center;
+    color: #1e1e1e;
+    z-index: 2; 
+    max-width: 1200px;
+   
+}
+
+.absolute{
+    position: absolute;
+    text-align: left;
+    top: 50%; /* Розмістити по вертикалі в центрі банера */
+    left: 50%; /* Розмістити по горизонталі в центрі банера */
+    transform: translate(-50%, -50%);
+    text-align: center; /* Вирівнюємо текст по центру */
+    color: #1e1e1e; /* Колір тексту  */
+    z-index: 2; /* Шар наверху */
+    max-width: 1200px; /* Максимальна ширина контенту банера */
+}
+
+.btn-effect:hover {
+    background-color: #0f7a9d; 
+}
+
+.swiper-banner {
+    display: flex;
+    flex-direction: row; 
+}
+
+/*стилі інформаціїйної секції */
+
+
+
+.information-section {
+    display: flex;
+    color :#1e1e1e;
+    margin: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 32;
+    padding-right: 32px;
+}
+
+
+.product-features {
+
+    display: grid; 
+    grid-auto-flow: column;
+    grid-template-columns: repeat(11, 1fr) 2fr ;   
+    gap: 20px;
+ 
+}
+
+
+.free-shipping, 
+.transition-all,
+.money-bank
+ {
+    display:flex;
+    background-color: #e6f7f8;
+    width: 225px;
+    height:128px
+}
+
+
+.icon1 {
+  margin-right: 10px;
+    
+}
+
+.icon-free-shipping {
+    display: flex;
+    width: 64px;
+    height: 64px;
+
+}
+
+h3.font-bolt{
+    width: 115px;
+    height: 24px;
+    padding: 0%;
+}
+
+
+.text-free {
+    flex: 1; 
+}
+
+/*стилі до offers*/
+.offers-section {
+    display: flex;
+    flex-direction: column; /* Розміщуємо елементи вертикально */
+    align-items: center; /* Вирівнюємо по центру по горизонталі */
+    margin-left:50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 950px;
+    height: 600px;
+  
+}
+.liner-container {
+   
+    width: 100%;
+    height:43px;
+    margin-top:20px;
+    text-align: center;
+    justify-content: center; /* Вирівнювання по центру по горизонталі */
+    align-items: center; /* Вирівнювання по центру по вертикалі */
+}
+
+
+h1.offers{
+    padding-bottom: 10px;
+}
+.swiper-container {
+    display: flex;
+    padding: 10px;
+    width: 960px;
+    height:400px;
+}
+.swiper {
+    display: flexbox;
+    width: 960px;
+    height: auto;
+
+}
+.swiper-wrapper {
+    
+
+}
+.card-container{
+    position: relative;
+}
+.absolute{
+    display: flex;
+    background-color: #16aacb;
+    color:#333;
+    margin: 0%;
+    padding:0%;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+
+}
+
+.text-md{
+    margin: 0%;
+}

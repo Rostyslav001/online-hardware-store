@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="/css/catalog_product_2.css">
+    <link rel="stylesheet" href="/css/adaptive.css">
+    <script src="\Note.js"></script> 
+
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="working-day">
+                    <span class="Mon-Thu">Mon-Thu:</span>
+                    <span class="time">9:00 AM - 5:30 PM</span>
+                </div>
+
+                <div class="Visit">
+                    <span class="contact-link">Visit our showroom at 1234 Street Address, City Address, 1234</span>
+                    <span class="contact">Contact Us</span>
+                </div>
+
+                <div class="phone-number-contacts">Call Us: (00) 1234 5678</div>
+            </div>
+            <div class="information-panel">
+                <nav>
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="\1.svg" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="menu-container">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="/products">Products</a></li>
+                            <li class="menu-item"><a href="#">Home</a></li>
+                            <li class="menu-item"><a href="#">Desktop</a></li>
+                            <li class="menu-item"><a href="#">Smartphone</a></li>
+                            <li class="menu-item"><a href="#">Shop</a></li>
+                            <li class="menu-item"><a href="#">Pages</a></li>
+                            <li class="menu-item"><a href="#">Contact us</a></li>
+                            <li class="menu-item", id="loginLing"><a href="/login">Login</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="panel-icon">
+                        <div class="search-form">
+                            <div class="search-container">
+                                <a href="#">
+                                    <img src="\gg_search.svg" alt="image-search">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="shopping-cart">
+                            <div>
+                                <a href="#">
+                                    <img src="\jam_shopping-cart.svg" alt="Shopping Cart">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="icon-host">
+                            <div>
+                                <a href="#">
+                                    <img src="\Ellipse 8.png" alt="Host Icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>  
+    </header>
+   
+    <div class="main">  
+
+        <section class="product_container">
+          <div class="view-modes">
+            <button id="grip-view">Grip view</button>
+            <button id="list-view">List view</button>
+            <button class="button-to-show" id = "showFilterBtn"> Show Filters</button>          
+            <button id = "creatProducts" >Creat products</button>
+        </div>
+
+          <div class="filter-selected">
+            
+          </div>
+
+          <div class="product-items">
+            <ul class="product_list" id="product_list" data-category="all">
+
+                <% products.forEach(product => { %>
+                  <li class="product" id="product" data-category="<%= product.category %>">
+                    <div class="product-details">
+                      <div class="product-status">
+                        <% 
+                            const statusIndex = product.url_status; // assuming url_status contains the index
+                            const status = statuses[statusIndex]; // statuses should be an object with data from the status table
+                        %>
+                        <img src="<%= status.url_status %>" alt="<%= status.name_status %>">
+                        <p><%= status.name_status %></p>
+                    </div>
+                    
+                      <div class="product-image">
+                        <img src="<%= product.image_url %>" alt="Product Image">
+                      </div>
+                      <div class="product-ratings-and-reviews">
+            
+                        <div class="product-rating">
+                          <% for (let i = 0; i < product.rating; i++) { %>
+                            <img src="<%= product.starImage %>" alt="Star">
+                          <% } %>
+                        </div>
+                        
+                        <div class="product-reviews">
+                          <p>Reviews (<%= product.reviews %>)</p>
+                        </div>
+                      </div>
+                      <div class="product-title">
+                        <p><%= product.description %></p>
+                      </div>
+                      <div class="product-prices">
+                        <p class="discount-price">$<%= product.price %></p>
+                        <p class="original-price">$<%= product.price %></p>
+                      </div>
+                    </div>
+                  </li>
+                <% }); %>
+
+                 <li class="product" id ="product" data-category="clothing">
+                      <div class="product-details">
+                        <div class="product-status">
+                            <img src="\Group 132.svg" alt="In Stock">
+                            <p>In Stock</p>
+                          </div>
+                        <div class="product-image">
+                            <img src="\image 29.png" alt="Product Image">
+                        </div>
+                        
+                        <div class="product-ratings-and-reviews">
+                            <div class="product-rating">
+                                <img src="\Star 8.svg" alt="Star">
+                                <img src="\Star 8.svg"alt="Star">
+                                <img src="\Star 8.svg" alt="Star">
+                                <img src="\Star 8.svg" alt="Star">
+                                <img src="\Star 10.svg" alt="Star">
+                            </div>
+                            <div class="product-reviews">
+                                <p>Reviews (4)</p>
+                            </div>
+                        </div>
+                        <div class="product-title">
+                            <p>EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</p>
+                        </div>
+                        <div class="product-prices">
+                            <p class="discount-price">$499.00</p>
+                            <p class="original-price">$499.00</p>
+                        </div>
+                    </div>
+        
+                </li>
+              </ul>
+
+            
+
+        </div>
+                
+        <script src="\updata.js"></script>
+        
+
+        
+
+       
+
+        </section>
+
+        <div class="sidebar", id="sidebar">
+            <aside class="filters">
+                <div class="filter">
+
+                    <div class="filters-clear">
+                       
+                        <div>
+                            <h3>Filter</h3>
+                       </div>
+                            
+                            <div class="clear-button">
+                                <button id="clear-button">Clear Filter</button>
+                            </div>
+                            
+                        </div>
+                            
+                    </div>
+
+                    <div class="category">
+                        <label>Category:</label>
+                        <select id="categorySelect">
+                            <option class="all">All</option>
+                            <option class="clothing">Clothing</option>
+                            <option class="electronics">Electronics</option>
+                            <option class="accessories">Accessories</option>
+                        </select>
+                    </div>
+
+                    <div class="price">
+                        <label>Price Range:</label>
+                        <select id="price-list">
+                            <option class="custom-option" value="buy">0$-1000$</option>
+                            <option class="custom-option" value="buy">1000$-2000$</option>
+                            <option class="custom-option" value="buy">2000$-3000$</option>
+                        </select>
+                    </div>
+
+                    <div class="color">
+                        <label>Color:</label>
+                        <select id="colorPicker">
+                                
+                            <option class="custom-option" value="all">All Colors</option>
+                            <option class="custom-option" value="blue">Blue</option>
+                            <option class="custom-option" value="red">Red</option>
+                        </select>
+                        
+                    </div>
+
+                    <div class="filter-name">
+                        <label>Filter Name:</label>
+                        <input type="text" id="filterName"> 
+                    </div>
+
+                    <div class="add-filter">
+                        <button id="applyFilter">Apply Filter</button>
+                    </div>
+                    
+                <div class="brands">
+                    <div class="brands-all">
+                        <div class="button-brands-all">
+                            <div class="title-brand">
+                                <h3>Brands</h3>
+                            </div>
+                            <div class="all-Brands">
+                                <button id="allBrands">All Brands</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo-grid">
+                        <div class="logo-first-column">
+                            
+                            <div class="logo" data-brand="brand1">
+                                <img src="\company_logos\image 33.jpg" alt="Logo 1">
+                            </div>
+                            
+                            <div class="logo" data-brand="brand2">
+                                <img src="\company_logos\image 33.jpg" alt="Logo 2">
+                            </div>
+                            
+                            <div class="logo" data-brand="brand3">
+                                <img src="\company_logos\image 33.jpg" alt="Logo 3">
+                            </div>
+                        </div>
+
+                        <div class="logo-second-column">
+
+                            <div class="logo" data-brand="brand4">
+                                <img src="\company_logos\image 33.jpg" alt="Logo 4">
+                            </div>
+                        
+                            <div class="logo" data-brand="brand5">
+                                <img src="\company_logos\image 33.jpg" alt="Logo 5">
+                            </div>
+                        
+                            <div class="logo" data-brand="brand6">
+                                <img src="\company_logos\image 33.jpg" alt="Logo 6">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                
+                 
+                </div>
+
+                <div class="imag-icon">
+                    <div class="icon"></div>
+                </div>
+
+
+            </aside> 
+
+        </div> 
+        <script src = "\filter.js"></script>
+
+
+
+
+        <aside class="filter-window" id="filterWindow">
+            <div class="filters">
+                <div class="filter">
+                    <div class="filters-clear">
+                        <div>
+                            <h3>Filter</h3>
+                        </div>
+                        <div class="clear-button">
+                            <button id="clearButtonWindows">Clear Filter</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="category">
+                    <label>Category:</label>
+                    <select id="categorySelectWindows">
+                        <option value="all">All</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+    
+                <div class="price">
+                    <label>Price Range:</label>
+                    <select id="price-list">
+                        <option value="0-1000">0$-1000$</option>
+                        <option value="1000-2000">1000$-2000$</option>
+                        <option value="2000-3000">2000$-3000$</option>
+                    </select>
+                </div>
+    
+                <div class="color">
+                    <label>Color:</label>
+                    <select id="colorPicker">
+                        <option value="all">All Colors</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                </div>
+    
+                <div class="filter-name">
+                    <label>Filter Name:</label>
+                    <input type="text" id="filterName">
+                </div>
+    
+                <div class="add-filter">
+                    <button id="applyFilterWindows">Apply Filter</button>
+                </div>
+            </div>
+            <button id="closeFilterWindow">Close</button>
+        </aside>
+        
+
+        <script src="\test.js"></script>   
+
+
+    </div>
+
+    <div class="offer-panel">
+        <div class="products-offer">
+            <div class="productSupport">
+                <div class="imag-products">
+                    <img src="\bx_bx-support.svg" alt="">
+                </div>
+                <div class="title-products">
+                    <h4>Product Support</h4>
+                </div>
+                <div class="subtitle-products">
+                   <p>Up to 3 years on-site warranty available for your peace of mind.</p> 
+                </div>
+
+            </div>
+
+            <div class="personalAccount">
+                <div class="imag-products">
+                    <img src="\bx_bx-support.svg" alt="">
+                </div>
+                <div class="title-products">
+                    <h4>Product Support</h4>
+                </div>
+                <div class="subtitle-products">
+                   <p>Up to 3 years on-site warranty available for your peace of mind.</p> 
+                </div>
+
+            </div>
+
+            <div class="amazingSavings">
+                <div class="imag-products">
+                    <img src="\bx_bx-support.svg" alt="">
+                </div>
+                <div class="title-products">
+                    <h4>Product Support</h4>
+                </div>
+                <div class="subtitle-products">
+                   <p>Up to 3 years on-site warranty available for your peace of mind.</p> 
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container-footer">
+            <div class="container-email">
+                <div class="container_footer">
+                    <div class="title">
+                        <h2>Sign Up To Our Newsletter.</h2>
+                    </div>
+                    <div class="subtitle">
+                        <h6>Be the first to hear about the latest offers.</h6>
+                    </div>
+                </div>
+                <div class="col-email">
+                    <form id="email-form">
+                        <input type="email" placeholder="Your Email" class="inputEmail">
+                        <input type="submit" value="Submit" class="inputSubmit">
+                    </form>
+                </div>
+             
+            </div>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row-cards">
+                <div class="col">
+                    <p>&#169; Copyright © 2023 Shop Pty. Ltd.</p>
+                </div>
+                <div class="bank-cards">
+                    <a href="#"><i><img src="\icon\paypal.png" alt=""></i></a>
+                    <a href="#"><i><img src="\icon\paypal.png" alt=""></i></a>
+                    <a href="#"><i><img src="\icon\paypal.png" alt=""></i></a>
+                    <a href="#"><i><img src="\icon\paypal.png" alt=""></i></a>
+                    <a href="#"><i><img src="\icon\paypal.png" alt=""></i></a>
+                </div>
+                <div class="socialIcins">
+                    <a href="#"><i class="facebook"><img src="\icon\ant-design_facebook-filled.svg" alt=""></i></a>
+                    <a href="#"><i class="instagram"><img src="\icon\ant-design_instagram-filled.png" alt=""></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

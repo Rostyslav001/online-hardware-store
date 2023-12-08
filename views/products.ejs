@@ -1,0 +1,52 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="/css/catalog_product_2.css">
+  <link rel="stylesheet" href="/css/adaptive.css">
+</head>
+<body>
+  <ul>
+
+    <% products.forEach(product => { %>
+      <li class="product" id="product" data-category="<%= product.category %>">
+        <div class="product-details">
+          <div class="product-status">
+            <% 
+                const statusIndex = product.url_status; // assuming url_status contains the index
+                const status = statuses[statusIndex]; // statuses should be an object with data from the status table
+            %>
+            <img src="<%= status.url_status %>" alt="<%= status.name_status %>">
+            <p><%= status.name_status %></p>
+        </div>
+        
+          <div class="product-image">
+            <img src="<%= product.image_url %>" alt="Product Image">
+          </div>
+          <div class="product-ratings-and-reviews">
+
+            <div class="product-rating">
+              <% for (let i = 0; i < product.rating; i++) { %>
+                <img src="<%= product.starImage %>" alt="Star">
+              <% } %>
+            </div>
+            
+            <div class="product-reviews">
+              <p>Reviews (<%= product.reviews %>)</p>
+            </div>
+          </div>
+          <div class="product-title">
+            <p><%= product.description %></p>
+          </div>
+          <div class="product-prices">
+            <p class="discount-price">$<%= product.price %></p>
+            <p class="original-price">$<%= product.price %></p>
+          </div>
+        </div>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>

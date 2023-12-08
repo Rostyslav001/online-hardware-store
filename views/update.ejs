@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\css\updata.css">
+
+    <title>Product Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<form id = "formproduct" action="/update-form" method="post">
+    
+  <h1>Create Product</h1>
+
+  <label for="productName">Product Name:</label><br>
+  <input type="text" id="productName" name="productName" required><br>
+
+
+  <label for="productCategory">Product Category:</label><br>
+  <select id="productCategory" name="productCategory" required>
+
+    <option value="1">Clothing</option>
+    <option value="2">Electronics</option>
+    <option value="3">Accessories</option>
+  </select><br>
+    
+  <label for="productStatus">Product Status:</label><br>
+  <select id="productStatus" name="productStatus" required>
+
+    <option value="1">In stock</option>
+    <option value="2">No stock</option>
+  </select><br>
+
+  <label for="productDescription">Product Description:</label><br>
+  <textarea id="productDescription" name="productDescription" cols="40" rows="3" required></textarea><br>
+
+  <label for="productPrice">Product Price:</label><br>
+  <input type="text" id="productPrice" name="productPrice" required><br>
+
+  <label for="fileInput">Choose a photo:</label><br>
+  <input type="file" id="fileInput" name="fileInput" accept="image/*" required><br>
+
+  <input type="submit" onclick="submitForm()" value="Create Product"><br>
+
+</form>
+
+<script src="\updata.js"></script>
+
+
+
+
+</body>
+</html>

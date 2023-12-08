@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Різдвяна вітальна відкритка</title>
+</head>
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url("gradient\ 1.png");
+    background-size: cover;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.hidden {
+    display: none;
+}
+
+.santa {
+    background: url("photo_2023-12-07_20-42-22.jpg" ) no-repeat;
+    width: 100%;
+    height: 290px; 
+    background-size: cover;
+    border-radius: 10px; 
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #f2f5f5;
+    color: #fbfafa;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+}
+
+.panel-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%; 
+    height: auto; 
+    max-height: 30px;
+}
+
+.imageSanta{
+
+    background: url("Image.png") no-repeat;
+    width: 500px;
+    background-size: 73%;
+    height: inherit;
+    background-position: right;
+
+}
+
+.imag{
+    width: 500px;
+    height: 433px;
+
+}
+
+.text{
+    width: 344px;
+}
+
+.conteiner{
+
+    display: flex;
+
+}
+</style>
+
+<body>
+    <div class="card">
+        <h1>Веселих свят!</h1>
+        <p>Нехай цей Різдвяний час принесе вам радість та щастя.</p>
+        <button onclick="showSanta()">Показати Миколая</button>
+        <div class="hidden" id="santa">
+            <div class="santa"></div>
+        </div>
+    </div>
+
+    <div id="popup">
+        <header>
+            <div class="information-panel">
+                <nav>
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="Image2.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="menu-container">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#">New</a></li>
+                            <li class="menu-item"><a href="#">Popular</a></li>
+                            <li class="menu-item"><a href="#">Gifts</a></li>
+                            <li class="menu-item"><a href="#">Cards</a></li>
+                            <li class="menu-item"><a href="#">Sing In</a></li>
+                            <li class="menu-item", id="loginLing"><a href="/login">Sing Up</a></li>
+                        </ul>
+                    </div>
+
+                    
+                </nav>
+            </div>
+
+
+
+        </header>
+
+        <div class="conteiner">
+
+            <div class="text">
+
+                <h2>Greetings
+                    Santa is coming,
+                    Dear Friends
+                </h2> 
+                
+                <div class="title">
+                    <p>Find the perfect holiday gift for everyone on your list this year, no matter what’s your budget.</p>
+                </div>
+
+
+            </div>
+           
+                
+            <div class="imag">
+
+                <div class="imageSanta"></div>
+            </div>
+
+
+        </div>
+
+
+
+
+       
+
+      
+        <button onclick="closePopup()">Закрити</button>
+    </div>
+      
+
+  
+</body>
+
+
+<script>
+
+    function showSanta() {
+        document.getElementById('popup').style.display = 'block';
+        let cards = document.getElementsByClassName('card');
+        for (let i = 0 ; i < cards.length; i++){
+        
+            cards[i].style.display = 'none';
+        }
+      }
+    
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+        let cards = document.getElementsByClassName('card');
+        for (let i = 0 ; i < cards.length; i++){
+        
+            cards[i].style.display = 'block';
+        }
+
+      }
+
+</script>
+
+</html>

@@ -1,0 +1,97 @@
+.product {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 233px;
+    background-color: #fff;
+    
+}
+.product-ratings-and-reviews {
+    display: flex;
+    align-items: center; 
+}
+.product-image img {
+    max-width: 100%;
+}
+
+.product-status {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.product-image{
+    width: 150px;
+    height: 150px;
+}
+.product-status img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.product-title p {
+    font-size: 16px;
+    margin: 5px 0;
+   
+}
+
+.product-rating img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.product-reviews p {
+    font-size: 14px;
+}
+
+.product-prices .discount-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.product-prices .original-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #777; 
+}
+.product-rating {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+}
+
+.product_container{
+    display: flex;
+}
+.custome_builds{
+    display: flex;
+}
+.product-type-container{
+    display: flex;
+    background: url("../../imag/image\ 30.png") no-repeat;
+    position: relative;
+    background-size: cover;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    max-width: 9%;
+    min-height: 300px;
+    min-width: 300px;
+    
+
+}
+
+@media (max-width: 768px) {
+    .product-type-container {
+        min-height: 200px; /* Adjust the minimum height for smaller screens */
+    }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .product-type-container {
+        min-height: 150px; /* Adjust the minimum height for even smaller screens */
+    }
+}
